@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CsvFileElectricVehicleLoader implements ElectricVehicleLoader {
-    private File file;
+    private final File file;
 
     private CsvFileElectricVehicleLoader(File file) {
         this.file=file;
