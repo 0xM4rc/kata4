@@ -5,15 +5,12 @@ import software.ulpgc.kata4.barChart.swing.MainFrame;
 import software.ulpgc.kata4.electricVehicle.*;
 
 import java.io.File;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         // Cargar datos de vehículos eléctricos desde un archivo CSV
         List<ElectricVehicle> vehicles = CsvFileElectricVehicleLoader.with(
                         new File("src/main/resources/Electric_Vehicle_Population_Data_simplified.csv"))
